@@ -14,11 +14,15 @@
     ],
     "module": "ESNext",
     "moduleDetection": "force",
-    "moduleResolution": "NodeNext",
+    "moduleResolution": "Bundler",
     "noUncheckedIndexedAccess": true,
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
     "target": "ES2022"
-  }
+  },
+  "exclude": [
+    "node_modules",
+    ".turbo"
+  ]
 }

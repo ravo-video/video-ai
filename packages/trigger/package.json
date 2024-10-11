@@ -1,0 +1,27 @@
+{
+  "name": "@repo/trigger",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "eslint .",
+    "trigger": "pnpm dlx trigger.dev@latest dev"
+  },
+  "dependencies": {
+    "@trigger.dev/sdk": "^3.0.12",
+    "whisper-node": "^1.1.1"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@trigger.dev/build": "^3.0.12",
+    "@types/node": "^20"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@repo/eslint-config/library"
+    ]
+  }
+}

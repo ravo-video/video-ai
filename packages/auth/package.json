@@ -1,0 +1,26 @@
+{
+  "name": "@repo/auth",
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "@auth/core": "^0.35.3",
+    "@repo/env": "workspace:*",
+    "next-auth": "5.0.0-beta.22"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "22.7.4"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@repo/eslint-config/library"
+    ]
+  }
+}

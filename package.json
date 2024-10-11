@@ -1,5 +1,5 @@
 {
-  "name": "turborepo-shadcn-ui",
+  "name": "@repo/image",
   "version": "1.4.2",
   "private": true,
   "license": "MIT",
@@ -9,6 +9,7 @@
     "lint": "turbo run lint --",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "ui": "pnpm --filter @repo/ui ui",
+    "trigger": "pnpm --filter @repo/trigger trigger",
     "db:generate": "turbo run db:generate",
     "db:migrate": "turbo run db:migrate",
     "db:studio": "turbo run db:studio",
